@@ -8,12 +8,12 @@ public class Cartera{
     }
 
     synchronized void addmoney(double cuantity){
-        System.out.println();
+        System.out.println("Dinero depositado: " + cuantity + " total de: " + (money += cuantity));
 
     }
 
     synchronized void lessmoney(double cuantity){
-        System.out.println();
+        System.out.println("Dinero extraido: " + cuantity + " total de: " + (money -= cuantity));
 
     }
 
