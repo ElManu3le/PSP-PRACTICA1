@@ -1,4 +1,4 @@
-package PracticaHilos;
+package Practica;
 
 
 public class App implements Runnable  //Clase que implementa la interfaz Runnable
