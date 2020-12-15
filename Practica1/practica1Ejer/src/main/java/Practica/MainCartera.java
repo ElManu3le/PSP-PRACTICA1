@@ -8,15 +8,15 @@ public class MainCartera {
         Client clientes = new Client(cartera);
         for (int i = 0; i < 10; i++) {
             clientes = new Client(cartera);
-            clientes.start();
-            
+            new Thread(clientes).start();
+
         }
 
         Worker worka = new Worker(cartera);
         for (int i = 0; i < 10; i++) {
             worka = new Worker(cartera);
-            worka.start();
-            
+            new Thread(worka).start();
+
         }
     }
 
