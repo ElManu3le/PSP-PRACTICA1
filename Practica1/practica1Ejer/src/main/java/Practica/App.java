@@ -1,18 +1,15 @@
 package Practica;
 
-
-public class App implements Runnable  //Clase que implementa la interfaz Runnable
+public class App // Clase que implementa la interfaz Runnable
 {
-   /*  public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
-    } */ 
+    public static void main(String[] args) {
+        HilosExtends[] hilosExtends = new HilosExtends[100];
+        for (HilosExtends listahilos : hilosExtends) {
+            listahilos = new HilosExtends();
+            listahilos.start();
 
-    @Override
-    public void run() {
-       for (int i = 0; i < 100; i++) {
-           
-       }
+        }
 
     }
+
 }
