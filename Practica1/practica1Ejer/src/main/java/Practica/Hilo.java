@@ -1,8 +1,14 @@
 package Practica;
 
-public class HilosExtends extends Thread {
+public class Hilo extends Thread {
 
-    static int contador = 0;
+    int id;
+
+     public Hilo(int id){
+        this.id = id;         
+     }   
+
+
 
     public void run() {
 
@@ -10,13 +16,13 @@ public class HilosExtends extends Thread {
                                                          // no tira
         // Introduciendo el int, marcamos a que el MathRandom solo haga con int y no con
         // double, como lo hace de manera predefinida.
-        contador++;
-        System.out.println("Soy el hilo hijo " + contador + " y me pongo a dormir " + miliseconds + " segundos");
+        
+        System.out.println("Soy el hilo hijo " + id + " y me pongo a dormir " + miliseconds + " segundos");
 
         try {
             Thread.sleep(miliseconds * 1000);
 
-            System.out.println("Soy el hilo " + contador + " y he terminado de dormir!");
+            System.out.println("Soy el hilo " + id + " y he terminado de dormir!");
         } catch (Exception e) {
             e.printStackTrace();
         }
