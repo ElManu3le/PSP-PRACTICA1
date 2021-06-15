@@ -4,11 +4,9 @@ public class Hilo extends Thread {
 
     int id;
 
-     public Hilo(int id){
-        this.id = id;         
-     }   
-
-
+    public Hilo(int id) {
+        this.id = id;
+    }
 
     public void run() {
 
@@ -16,7 +14,7 @@ public class Hilo extends Thread {
                                                          // no tira
         // Introduciendo el int, marcamos a que el MathRandom solo haga con int y no con
         // double, como lo hace de manera predefinida.
-        
+
         System.out.println("Soy el hilo hijo " + id + " y me pongo a dormir " + miliseconds + " segundos");
 
         try {
